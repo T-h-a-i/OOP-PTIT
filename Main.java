@@ -67,6 +67,9 @@ class DonHang {
 
     public void inDonHang(){
         System.out.printf("%-6s %-20s %-7d %,.0f%n" , tenKhach, sanPham.getTenSP(), soLuong, tinhThanhTien());
+        if (this.soLuong >= 5) {
+            System.out.printf("       (đã giảm 10%%)\n");
+        }
     }
 }
 
